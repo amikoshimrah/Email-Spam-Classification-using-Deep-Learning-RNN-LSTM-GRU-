@@ -85,6 +85,3 @@ Each model includes:
 ## 🏷️ Tags
 `Deep Learning` `NLP` `TensorFlow` `Machine Learning` `Email Spam Detection` `RNN` `LSTM` `GRU`
 
----
-
-⭐ *If you found this project helpful, consider starring the repository!*
