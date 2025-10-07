@@ -1,46 +1,90 @@
-# Email-Spam-Classification-using-Deep-Learning-RNN-LSTM-GRU-
-Please go through the attached python file and provide specific to this file: 
-1. Suitable title 2. Project Description <300 characters
-3.please provide the project summary for read me file in GitHub
-4.Please Create linkedin post stating my achievement
-5. Add my mentor - Chirag Jhumkhawala, KARKAVELRAJA J, pranav
-4.In the above post, i need to add the github for my code snippet
+# 📧 Email Spam Classification using RNN, LSTM & GRU
 
-I am going to add the above project under my Upwork portfolio. Give me a Project Title (70 Characters), My Role (End to End Development) (100 Characters), Project Description (600 Characters) 
-and Skills and deliverables (5 skills)."
+## 🧠 Project Overview
+This project demonstrates an end-to-end **Email Spam Classification** system using **Deep Learning**.  
+By leveraging **Recurrent Neural Networks (RNN)**, **Long Short-Term Memory (LSTM)**, and **Gated Recurrent Unit (GRU)** models, the system intelligently classifies emails as *spam* or *non-spam* based on their content.
 
-Time Series Analysis for Bitcoin Price Prediction using RNN, LSTM, and GRU
-linkedin:
-https://www.linkedin.com/posts/sothing-shimrah-7a895286_machinelearning-deeplearning-timeseries-activity-7381231935483793410-RVnr?utm_source=share&utm_medium=member_desktop&rcm=ACoAABJLMvABAtskxj4cQg5UayA-47btL3p4B44
-Upwork:
-https://www.upwork.com/freelancers/~01c699e9362d8ec23a?p=1975468529489743872
+---
 
+## 🚀 Objectives
+- Build deep learning models capable of identifying spam messages.
+- Compare RNN, LSTM, and GRU architectures for accuracy and efficiency.
+- Perform data preprocessing, text cleaning, and tokenization.
+- Visualize model performance metrics (accuracy, loss).
 
-📘 Project Summary
+---
 
-This project demonstrates an end-to-end Email Spam Classification system using Deep Learning.
-Using the Spam Mails Dataset from Kaggle, text data is cleaned, tokenized, and converted into padded sequences before being fed into RNN, LSTM, and GRU models. Each model is trained and evaluated to compare performance in identifying spam emails effectively.
+## 🧩 Workflow Summary
 
-Key Steps:
+### 1. **Data Acquisition**
+- Dataset: [Spam Mails Dataset (Kaggle)](https://www.kaggle.com/datasets/venky73/spam-mails-dataset)
+- Downloaded using `kagglehub` and loaded into pandas for preprocessing.
 
-Data acquisition via KaggleHub
+### 2. **Data Preprocessing**
+- Text cleaning: punctuation, numbers, and stopword removal.
+- Tokenization and padding using TensorFlow’s `Tokenizer` and `pad_sequences`.
+- Label encoding for spam (1) and ham (0).
 
-Data preprocessing (cleaning, tokenization, padding)
+### 3. **Model Building**
+Developed three separate models for performance comparison:
+- **Simple RNN Model**
+- **LSTM Model**
+- **GRU Model**
 
-Model building using RNN, LSTM, and GRU layers
+Each model includes:
+- Embedding layer  
+- Recurrent layers (RNN/LSTM/GRU)  
+- Dense + Dropout layers for optimization  
 
-Model evaluation and comparison based on accuracy and loss metrics
+### 4. **Training & Evaluation**
+- Split dataset into train/test sets (80/20 ratio)
+- Implemented **EarlyStopping** to prevent overfitting
+- Compared metrics:
+  - Accuracy
+  - Validation Loss
+  - Training Curves
 
-Visualization of training results
+### 5. **Results**
+- All models successfully classified spam vs ham emails with high accuracy.
+- **LSTM** and **GRU** models showed superior generalization compared to Simple RNN.
+- Visualizations of accuracy/loss trends were plotted using Matplotlib and Seaborn.
 
-Technologies Used:
+---
 
-Python · TensorFlow · Keras · Pandas · NumPy · Matplotlib · Seaborn
+## 🧮 Technologies Used
+- **Python**
+- **TensorFlow / Keras**
+- **NumPy**
+- **Pandas**
+- **Matplotlib**
+- **Seaborn**
+- **KaggleHub**
 
-Dataset:
+---
 
-Spam Mails Dataset – Kaggle
+## 📊 Key Takeaways
+- Learned comparative performance of RNN-based architectures.
+- Enhanced understanding of text preprocessing and sequence modeling.
+- Demonstrated how recurrent networks handle sequential dependencies in text data.
 
-Mentors:
+---
 
-Chirag Jhumkhawala, KARKAVELRAJA J, Pranav
+## 🙌 Mentors
+- **Chirag Jhumkhawala**  
+- **KARKAVELRAJA J**  
+- **Pranav**
+
+---
+
+## 🔗 Resources
+- 📂 Dataset: [Spam Mails Dataset – Kaggle](https://www.kaggle.com/datasets/venky73/spam-mails-dataset)  
+- 💻 Code Repository: [Add your GitHub repository link here]
+
+---
+
+## 🏷️ Tags
+`Deep Learning` `NLP` `TensorFlow` `Machine Learning` `Email Spam Detection` `RNN` `LSTM` `GRU`
+
+---
+
+⭐ *If you found this project helpful, consider starring the repository!*
